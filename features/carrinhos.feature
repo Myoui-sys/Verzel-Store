@@ -14,3 +14,20 @@ Funcionalidade: Gerenciamento dos produtos no carrinho
     E o subtotal deve ser de R$ 149,50
     E o frete deve ser de R$ 19,90
     E o total deve ser de R$ 169,40
+
+  @CT-013 @CA10 @limite @negativo
+  Cenário: Tentar adicionar uma sexta unidade do mesmo produto
+    Dado que possuo 5 unidades do "Kit 3 Pares de Meias" no carrinho
+    Quando tento adicionar mais 1 unidade do mesmo produto
+    Então a quantidade do produto não deve ultrapassar 5 unidades
+    E o subtotal deve permanecer em R$ 149,50
+
+  @CT-014 @CA11 @calculo
+  Cenário: Apresentar os valores monetários com duas casas decimais
+    Dado que possuo 3 unidades da "Camiseta Essencial" no carrinho
+    E o subtotal do carrinho é R$ 179,70
+    Quando aplico o cupom "BEMVINDO10"
+    Então o desconto deve ser de R$ 17,97
+    E o frete deve ser de R$ 19,90
+    E o total deve ser de R$ 181,63
+    E todos os valores monetários devem ser apresentados com duas casas decimais
