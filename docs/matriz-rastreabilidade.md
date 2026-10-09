@@ -16,3 +16,8 @@
 
 | API-01 | Listagem de produtos | CT-015 | Planejado |
 | API-02 | Confirmação de pedido válido | CT-019 | Planejado |
+
+| RN-01 | Cliente deve informar nome e sobrenome | CT-021, CT-023 | Planejado |
+| RN-02 | Cliente deve informar e-mail válido | CT-021, CT-024 | Planejado |
+| RN-03 | CEP deve possuir 8 dígitos, com ou sem hífen | CT-021, CT-022, CT-025 | Planejado |
+| RN-04 | Pagamento é realizado na entrega | CT-021 | Planejado |
