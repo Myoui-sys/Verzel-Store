@@ -13,10 +13,8 @@
 | CA09 | Desconto não incide sobre o frete | CT-011 | Planejado |
 | CA10 | Máximo de cinco unidades por produto | CT-012, CT-013, CT-018 | Planejado |
 | CA11 | Valores arredondados para duas casas | CT-014 | Planejado |
-
 | API-01 | Listagem de produtos | CT-015 | Planejado |
 | API-02 | Confirmação de pedido válido | CT-019 | Planejado |
-
 | RN-01 | Cliente deve informar nome e sobrenome | CT-021, CT-023 | Planejado |
 | RN-02 | Cliente deve informar e-mail válido | CT-021, CT-024 | Planejado |
 | RN-03 | CEP deve possuir 8 dígitos, com ou sem hífen | CT-021, CT-022, CT-025 | Planejado |
