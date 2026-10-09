@@ -45,8 +45,6 @@ Conforme a documentação do desafio, não serão realizados:
 
 ## 5. Ambiente
 
-## 5. Ambiente
-
 - Aplicação: https://verzel-store.qa-test-verzel-store.workers.dev/
 - Documentação: https://verzel-store.qa-test-verzel-store.workers.dev/documentacao
 - Documentação da API: https://verzel-store.qa-test-verzel-store.workers.dev/documentacao#api
