@@ -16,4 +16,12 @@ Funcionalidade: Aplicação de cupons no carrinho
     E o frete deve ser grátis
     E o total deve ser de R$ 215,73
 
+  @CT-002 @CA02 @positivo
+  Cenário: Aplicar cupom ignorando caixa e espaços externos
+    Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
+    Quando aplico o cupom "  bemvindo10  "
+    Então o cupom deve ser aceito
+    E o desconto deve ser de R$ 10,00
+    E o total deve ser de R$ 109,90
+
     
