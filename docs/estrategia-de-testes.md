@@ -45,9 +45,12 @@ Conforme a documentação do desafio, não serão realizados:
 
 ## 5. Ambiente
 
+## 5. Ambiente
+
 - Aplicação: https://verzel-store.qa-test-verzel-store.workers.dev/
 - Documentação: https://verzel-store.qa-test-verzel-store.workers.dev/documentacao
-- API: https://verzel-store.qa-test-verzel-store.workers.dev/documentacao#api
+- Documentação da API: https://verzel-store.qa-test-verzel-store.workers.dev/documentacao#api
+- URL-base da API: https://verzel-store.qa-test-verzel-store.workers.dev/api
 - Versão da aplicação: 2.3.0
 - Sistema operacional: Windows
 - Navegador: preencher durante a execução
