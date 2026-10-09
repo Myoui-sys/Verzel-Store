@@ -32,4 +32,26 @@ Funcionalidade: Aplicação de cupons no carrinho
     E nenhum desconto deve ser aplicado
     E o total deve ser de R$ 119,90
 
-    
+  @CT-004 @CA04 @negativo
+  Cenário: Tentar aplicar um cupom expirado
+    Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
+    Quando aplico o cupom "VERAO2026"
+    Então deve ser exibida a mensagem "Cupom expirado."
+    E nenhum desconto deve ser aplicado
+    E o total deve ser de R$ 119,90
+
+  @CT-005 @CA05 @negativo
+  Cenário: Tentar aplicar outro cupom sem remover o atual
+    Dado que o cupom "BEMVINDO10" está aplicado ao carrinho
+    Quando tento aplicar outro cupom sem remover o atual
+    Então dois cupons não devem permanecer aplicados simultaneamente
+    E o desconto do cupom "BEMVINDO10" deve permanecer inalterado
+
+  @CT-006 @CA05 @positivo
+  Cenário: Remover um cupom aplicado
+    Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
+    E o cupom "BEMVINDO10" está aplicado
+    Quando removo o cupom
+    Então nenhum desconto deve permanecer aplicado
+    E o frete deve ser de R$ 19,90
+    E o total deve ser de R$ 119,90
