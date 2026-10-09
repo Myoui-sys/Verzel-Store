@@ -24,4 +24,12 @@ Funcionalidade: Aplicação de cupons no carrinho
     E o desconto deve ser de R$ 10,00
     E o total deve ser de R$ 109,90
 
+  @CT-003 @CA03 @negativo
+  Cenário: Tentar aplicar um cupom inexistente
+    Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
+    Quando aplico o cupom "CUPOMINVALIDO"
+    Então deve ser exibida a mensagem "Cupom inválido."
+    E nenhum desconto deve ser aplicado
+    E o total deve ser de R$ 119,90
+
     
