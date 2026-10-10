@@ -21,9 +21,9 @@
 
 | ID | Área | Status | Resultado obtido | Evidência | Bug |
 |---|---|---|---|---|---|
-| CT-001 | Cupom | Passou | Subtotal de R$ 239,70, desconto de R$ 23,97, frete grátis e total de R$ 215,73 | evidencias/manual/CT-001/02-cupom-aplicado.png | - |
-| CT-002 | Cupom | Passou | Subtotal de R$ 109,90, desconto de R$ 10,00, frete com valor de R$19,90 e total de R$ 109,90 | evidencias/manual/CT-002/02-cupom-com-espaco-aplicado.png | - |
-| CT-003 | Cupom | Não executado | - | - | - |
+| CT-001 | Cupom | Passou | Subtotal de R$ 239,70, desconto de R$ 23,97, frete grátis e total de R$ 215,73 | [Ver evidência](../evidencias/manual/CT-001/02-cupom-aplicado.png) | - |
+| CT-002 | Cupom | Passou | Subtotal de R$ 100,00, desconto de R$ 10,00, frete de R$ 19,90 e total de R$ 109,90 | [Ver evidência](../evidencias/manual/CT-002/02-cupom-com-espaco-aplicado.png) | - |
+| CT-003 | Cupom | Passou | Mensagem "Cupom inválido.", nenhum desconto aplicado, frete de R$ 19,90 e total de R$ 119,90 | [Ver evidência](../evidencias/manual/CT-003/02-cupom-invalido-aplicado.png) | - |
 | CT-004 | Cupom | Não executado | - | - | - |
 | CT-005 | Cupom | Não executado | - | - | - |
 | CT-006 | Cupom | Não executado | - | - | - |
@@ -52,10 +52,10 @@
 | Situação | Quantidade |
 |---|---:|
 | Total planejado | 25 |
-| Passou | 0 |
+| Passou | 3 |
 | Falhou | 0 |
 | Bloqueado | 0 |
-| Não executado | 25 |
+| Não executado | 22 |
 
 ## Observações gerais
 

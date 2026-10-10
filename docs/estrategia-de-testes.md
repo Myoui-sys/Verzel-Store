@@ -113,7 +113,7 @@ Os testes de API acompanharão a prioridade da regra de negócio verificada.
 | Documentação | [Documentação da entrega](https://verzel-store.qa-test-verzel-store.workers.dev/documentacao) |
 | Documentação da API | [Documentação dos endpoints](https://verzel-store.qa-test-verzel-store.workers.dev/documentacao#api) |
 | URL-base da API | https://verzel-store.qa-test-verzel-store.workers.dev/api |
-| Versão da aplicação | Confirmar durante a execução. |
+| Versão da aplicação | 2.3.0 |
 | Sistema operacional | Windows; registrar a versão utilizada. |
 | Navegador e versão | Preencher durante a execução. |
 | Versão do Node.js | Registrar na execução da automação. |
