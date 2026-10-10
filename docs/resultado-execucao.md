@@ -2,13 +2,13 @@
 
 ## Informações da execução
 
-- Data de início:
+- Data de início: 10/10/2026
 - Data de término:
 - Sistema operacional: Windows
-- Navegador:
-- Versão do navegador:
+- Navegador: Google Chrome
+- Versão do navegador: 155.0.8059.40 (Versão oficial) 64 bits
 - Versão da aplicação: 2.3.0
-- Responsável:
+- Responsável: Dacyrrôse Melo
 
 ## Status utilizados
 
@@ -21,7 +21,7 @@
 
 | ID | Área | Status | Resultado obtido | Evidência | Bug |
 |---|---|---|---|---|---|
-| CT-001 | Cupom | Não executado | - | - | - |
+| CT-001 | Cupom | Passou | Subtotal de R$ 239,70, desconto de R$ 23,97, frete grátis e total de R$ 215,73 | evidencias/manual/CT-001/02-cupom-aplicado.png | - |
 | CT-002 | Cupom | Não executado | - | - | - |
 | CT-003 | Cupom | Não executado | - | - | - |
 | CT-004 | Cupom | Não executado | - | - | - |
