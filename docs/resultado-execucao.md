@@ -28,8 +28,8 @@
 | CT-005 | Cupom | Passou | Com o cupom BEMVINDO10 ativo, a interface não disponibilizou campo para informar outro cupom e manteve o desconto de R$ 10,00 | [Ver evidência](../evidencias/manual/CT-005/01-cupom-aplicado.png) | - |
 | CT-006 | Cupom | Passou | Após a remoção do BEMVINDO10, o campo de cupom foi disponibilizado novamente. O código VERAO2026 foi validado como expirado, sem desconto, com frete de R$ 19,90 e total de R$ 119,90 | [Cupom removido](../evidencias/manual/CT-006/02-cupom-removido.png) / [Novo cupom validado](../evidencias/manual/CT-006/03-novo-cupom-aplicado.png) | - |
 | CT-007 | Frete | Falhou | Com subtotal de R$ 200,00, o sistema cobrou frete de R$ 19,90 e apresentou total de R$ 219,90, embora informasse que faltavam R$ 0,00 para o frete grátis | [Ver evidência](../evidencias/manual/CT-007/01-frete-cobrado-no-limite.png) | [BUG-CT-007](bugs/BUG-CT-007.md) |
-| CT-008 | Frete | Não executado | - | - | - |
-| CT-009 | Frete | Não executado | - | - | - |
+| CT-008 | Frete | Passou | Para o subtotal de R$ 229,90, o sistema concedeu frete grátis e apresentou total de R$ 229,90 | [Ver evidência](../evidencias/manual/CT-008/01-frete-gratis.png) | - |
+| CT-009 | Frete | Passou | Para o subtotal de R$ 189,90, o sistema cobrou frete de R$ 19,90, informou que faltavam R$ 10,10 para o frete grátis e apresentou total de R$ 209,80 | [Ver evidência](../evidencias/manual/CT-009/01-cobranca-de-frete.png) | - |
 | CT-010 | Frete | Não executado | - | - | - |
 | CT-011 | Frete | Não executado | - | - | - |
 | CT-012 | Carrinho | Não executado | - | - | - |
