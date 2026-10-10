@@ -114,11 +114,11 @@ Os testes de API acompanharão a prioridade da regra de negócio verificada.
 | Documentação da API | [Documentação dos endpoints](https://verzel-store.qa-test-verzel-store.workers.dev/documentacao#api) |
 | URL-base da API | https://verzel-store.qa-test-verzel-store.workers.dev/api |
 | Versão da aplicação | 2.3.0 |
-| Sistema operacional | Windows; registrar a versão utilizada. |
-| Navegador e versão | Preencher durante a execução. |
-| Versão do Node.js | Registrar na execução da automação. |
-| Versão do Playwright | Registrar na execução da automação. |
-| Datas de início e término | Preencher durante a execução. |
+| Sistema operacional | Windows |
+| Navegador e versão | Google Chrome 155.0.8059.40 — 64 bits |
+| Versão do Node.js | 24.18.0 |
+| Versão do Playwright | 1.64.0 |
+| Datas de início e término | 10/10/2026 |
 
 ## 7. Dados de teste e preparação
 
@@ -212,6 +212,12 @@ Indisponibilidade do ambiente, mudanças nos dados e limitações de tempo poder
 
 Os comportamentos descritos como simplificações na seção "Sobre este ambiente" serão considerados esperados e não serão reportados como bugs.
 
-Eventuais ambiguidades serão registradas junto da interpretação adotada durante os testes.
+Durante a preparação, o link direto da API apresentado no material de apoio não carregou como esperado. Foi utilizada a URL-base confirmada na documentação web da aplicação: `https://verzel-store.qa-test-verzel-store.workers.dev/api`.
+
+O CA05 foi interpretado conforme o comportamento observável da interface: enquanto existe um cupom ativo, o campo para informar outro código não é apresentado; para trocar o cupom, é necessário remover o atual antes de aplicar outro.
+
+Após a identificação do BUG-CT-007, os dados do CT-010 foram ajustados para um subtotal de R$ 219,80. Essa alteração isolou a regra de frete calculado sobre o subtotal anterior ao desconto, evitando que o cenário fosse afetado pelo defeito existente no limite exato de R$ 200,00.
+
+O CT-013 foi descrito com base no comportamento observável da interface: ao atingir cinco unidades, o botão de adição é desabilitado e a mensagem de limite é apresentada.
 
 Os resultados representarão apenas os cenários, ambientes e condições efetivamente avaliados.

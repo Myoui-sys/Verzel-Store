@@ -3,7 +3,7 @@
 ## Informações da execução
 
 - Data de início: 10/10/2026
-- Data de término:
+- Data de término: 10/10/2026
 - Sistema operacional: Windows
 - Navegador: Google Chrome
 - Versão do navegador: 155.0.8059.40 (Versão oficial) 64 bits
@@ -72,3 +72,11 @@ Os cenários CT-001, CT-003 e CT-010 foram automatizados com Playwright e execut
 | CT-010 | Manter o frete grátis após o desconto | `tests/e2e/frete.spec.ts` | Passou |
 
 [Evidência da execução automatizada](../evidencias/automacao/01-playwright-tres-testes-aprovados.png)
+
+## Resultado dos testes exploratórios
+
+| Sessão | Área | Resultado | Novos bugs |
+|---|---|---|---:|
+| [EXP-001](exploratorios/EXP-001-cupons.md) | Cupons | Concluída | 0 |
+| [EXP-002](exploratorios/EXP-002-carrinho-frete.md) | Carrinho e frete | Concluída | 0 |
+| [EXP-003](exploratorios/EXP-003-checkout.md) | Checkout | Concluída | 0 |
