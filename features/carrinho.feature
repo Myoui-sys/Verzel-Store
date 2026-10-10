@@ -20,6 +20,7 @@ Funcionalidade: Gerenciamento dos produtos no carrinho
     Dado que possuo 5 unidades do "Kit 3 Pares de Meias" no carrinho
     Quando tento adicionar mais 1 unidade do mesmo produto
     Então a quantidade do produto não deve ultrapassar 5 unidades
+    E deve ser exibida a mensagem "Limite de 5 unidades por produto."
     E o subtotal deve permanecer em R$ 149,50
 
   @CT-014 @CA11 @calculo

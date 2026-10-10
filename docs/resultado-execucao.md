@@ -39,8 +39,8 @@
 | CT-016 | API | Passou | A API respondeu com status 200, subtotal de 239.70, desconto de 23.97, frete zero, total de 215.73 e cupom BEMVINDO10 marcado como aplicado | [Ver evidência](../evidencias/api/CT-016/01-calculo-cupom-valido.png) | - |
 | CT-017 | API | Passou | A API respondeu com status 200, manteve o desconto em zero e retornou o cupom CUPOMINVALIDO como não aplicado, com a mensagem "Cupom inválido." | [Ver evidência](../evidencias/api/CT-017/01-calculo-cupom-invalido.png) | - |
 | CT-018 | API | Falhou | A API aceitou 6 unidades do produto, respondeu com status 200 e calculou o carrinho, em vez de retornar status 422 e o código QUANTIDADE_MAXIMA_EXCEDIDA | [Ver evidência](../evidencias/api/CT-018/01-api-aceita-quantidade-acima-limite.png) | [BUG-CT-018](bugs/BUG-CT-018.md) |
-| CT-019 | API | Não executado | - | - | - |
-| CT-020 | API | Não executado | - | - | - |
+| CT-019 | API | Passou | A API respondeu com status 201, gerou o pedido VZ-140744 e retornou subtotal de 100.00, desconto de 10.00, frete de 19.90 e total de 109.90 | [Ver evidência](../evidencias/api/CT-019/01-pedido-valido-confirmado.png) | - |
+| CT-020 | API | Passou | A API rejeitou a criação do pedido com cupom inválido, respondendo com status 422 e código CUPOM_INVALIDO | [Ver evidência](../evidencias/api/CT-020/01-pedido-cupom-invalido.png) | - |
 | CT-021 | Checkout | Passou | O pedido foi confirmado com dados válidos, apresentou número no formato VZ-000000 e não solicitou pagamento online | [Ver evidência](../evidencias/manual/CT-021/02-pedido-confirmado.png) | - |
 | CT-022 | Checkout | Passou | O sistema aceitou o CEP 01310100 sem hífen e confirmou o pedido normalmente | [Ver evidência](../evidencias/manual/CT-022/02-pedido-confirmado.png) | - |
 | CT-023 | Checkout | Passou | O sistema impediu a confirmação do pedido com o nome "Maria", permaneceu no checkout e indicou que o campo de nome era inválido | [Ver evidência](../evidencias/manual/CT-023/01-nome-sem-sobrenome-rejeitado.png) | - |
@@ -51,12 +51,12 @@
 
 | Situação | Quantidade |
 |---|---:|
-| Total planejado | 25 |
-| Passou | 21 |
-| Falhou | 1 |
+| Total de cenários | 25 |
+| Passou | 23 |
+| Falhou | 2 |
 | Bloqueado | 0 |
-| Não executado | 3 |
+| Não executado | 0 |
 
 ## Observações gerais
 
-Preencher ao final da execução.
+Todos os 25 cenários planejados foram executados. Foram identificados dois defeitos: cobrança de frete no limite exato de R$ 200,00 e ausência de validação do limite de cinco unidades na API. Nenhum cenário ficou bloqueado.
