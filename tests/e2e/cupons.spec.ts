@@ -54,7 +54,7 @@ test.describe("Cupons de desconto", () => {
       "R$ 215,73",
     );
   });
-  
+
   test("@CT-003 rejeita cupom inexistente", async ({ page }) => {
     const mochila = page.getByRole("article", {
       name: "Mochila Urbana 20L",

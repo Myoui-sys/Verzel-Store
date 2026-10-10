@@ -60,3 +60,15 @@
 ## Observações gerais
 
 Todos os 25 cenários planejados foram executados. Foram identificados dois defeitos: cobrança de frete no limite exato de R$ 200,00 e ausência de validação do limite de cinco unidades na API. Nenhum cenário ficou bloqueado.
+
+## Resultado da automação
+
+Os cenários CT-001, CT-003 e CT-010 foram automatizados com Playwright e executados no projeto Chromium.
+
+| ID | Cenário automatizado | Arquivo | Status |
+|---|---|---|---|
+| CT-001 | Aplicar cupom válido sobre o subtotal | `tests/e2e/cupons.spec.ts` | Passou |
+| CT-003 | Rejeitar cupom inexistente | `tests/e2e/cupons.spec.ts` | Passou |
+| CT-010 | Manter o frete grátis após o desconto | `tests/e2e/frete.spec.ts` | Passou |
+
+[Evidência da execução automatizada](../evidencias/automacao/01-playwright-tres-testes-aprovados.png)
