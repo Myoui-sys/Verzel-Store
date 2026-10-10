@@ -32,9 +32,9 @@
 | CT-009 | Frete | Passou | Para o subtotal de R$ 189,90, o sistema cobrou frete de R$ 19,90, informou que faltavam R$ 10,10 para o frete grátis e apresentou total de R$ 209,80 | [Ver evidência](../evidencias/manual/CT-009/01-cobranca-de-frete.png) | - |
 | CT-010 | Frete | Passou | Com subtotal de R$ 219,80, o cupom aplicou desconto de R$ 21,98 e reduziu o total para R$ 197,82, mantendo o frete grátis | [Ver evidência](../evidencias/manual/CT-010/02-frete-gratis-apos-desconto.png) | - |
 | CT-011 | Frete | Passou | Para o subtotal de R$ 100,00, o cupom aplicou desconto de R$ 10,00 somente sobre os produtos, manteve o frete em R$ 19,90 e apresentou total de R$ 109,90 | [Ver evidência](../evidencias/manual/CT-011/02-desconto-nao-aplicado-ao-frete.png) | - |
-| CT-012 | Carrinho | Não executado | - | - | - |
-| CT-013 | Carrinho | Não executado | - | - | - |
-| CT-014 | Carrinho | Não executado | - | - | - |
+| CT-012 | Carrinho | Passou | O sistema permitiu 5 unidades do produto, apresentou subtotal de R$ 149,50, frete de R$ 19,90 e total de R$ 169,40 | [Ver evidência](../evidencias/manual/CT-012/02-limite-atendido.png) | - |
+| CT-013 | Carrinho | Passou | Ao atingir 5 unidades, o sistema desabilitou a adição de novas unidades, exibiu a mensagem "Limite de 5 unidades por produto." e manteve o subtotal em R$ 149,50 | [Ver evidência](../evidencias/manual/CT-013/01-limite-cinco-unidades.png) | - |
+| CT-014 | Carrinho | Passou | O sistema apresentou subtotal de R$ 179,70, desconto de R$ 17,97, frete de R$ 19,90, total de R$ 181,63 e todos os valores monetários com duas casas decimais | [Ver evidência](../evidencias/manual/CT-014/02-cupom-aplicado-decimal.png) | - |
 | CT-015 | API | Não executado | - | - | - |
 | CT-016 | API | Não executado | - | - | - |
 | CT-017 | API | Não executado | - | - | - |
@@ -52,10 +52,10 @@
 | Situação | Quantidade |
 |---|---:|
 | Total planejado | 25 |
-| Passou | 10 |
+| Passou | 13 |
 | Falhou | 1 |
 | Bloqueado | 0 |
-| Não executado | 14 |
+| Não executado | 11 |
 
 ## Observações gerais
 
