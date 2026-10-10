@@ -40,18 +40,24 @@ Funcionalidade: Aplicação de cupons no carrinho
     E nenhum desconto deve ser aplicado
     E o total deve ser de R$ 119,90
 
-  @CT-005 @CA05 @negativo
-  Cenário: Tentar aplicar outro cupom sem remover o atual
-    Dado que o cupom "BEMVINDO10" está aplicado ao carrinho
-    Quando tento aplicar outro cupom sem remover o atual
-    Então dois cupons não devem permanecer aplicados simultaneamente
-    E o desconto do cupom "BEMVINDO10" deve permanecer inalterado
-
-  @CT-006 @CA05 @positivo
-  Cenário: Remover um cupom aplicado
+  @CT-005 @CA05 @regra-de-negocio
+  Cenário: Impedir a aplicação de outro cupom enquanto existe um cupom ativo
     Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
     E o cupom "BEMVINDO10" está aplicado
-    Quando removo o cupom
-    Então nenhum desconto deve permanecer aplicado
+    Quando visualizo a área de cupom do carrinho
+    Então somente o cupom "BEMVINDO10" deve permanecer aplicado
+    E não deve ser possível informar outro cupom
+    E o desconto deve permanecer em R$ 10,00
+
+  @CT-006 @CA05 @regra-de-negocio
+  Cenário: Remover o cupom atual antes de informar outro código
+    Dado que possuo 1 unidade da "Mochila Urbana 20L" no carrinho
+    E o cupom "BEMVINDO10" está aplicado
+    Quando removo o cupom atual
+    E informo o cupom "VERAO2026" no campo disponibilizado
+    E solicito a aplicação do novo cupom
+    Então o cupom "BEMVINDO10" não deve permanecer aplicado
+    E deve ser exibida a mensagem "Cupom expirado."
+    E nenhum desconto deve ser aplicado
     E o frete deve ser de R$ 19,90
     E o total deve ser de R$ 119,90
