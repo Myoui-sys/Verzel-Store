@@ -22,7 +22,7 @@
 | ID | Área | Status | Resultado obtido | Evidência | Bug |
 |---|---|---|---|---|---|
 | CT-001 | Cupom | Passou | Subtotal de R$ 239,70, desconto de R$ 23,97, frete grátis e total de R$ 215,73 | evidencias/manual/CT-001/02-cupom-aplicado.png | - |
-| CT-002 | Cupom | Não executado | - | - | - |
+| CT-002 | Cupom | Passou | Subtotal de R$ 109,90, desconto de R$ 10,00, frete com valor de R$19,90 e total de R$ 109,90 | evidencias/manual/CT-002/02-cupom-com-espaco-aplicado.png | - |
 | CT-003 | Cupom | Não executado | - | - | - |
 | CT-004 | Cupom | Não executado | - | - | - |
 | CT-005 | Cupom | Não executado | - | - | - |
