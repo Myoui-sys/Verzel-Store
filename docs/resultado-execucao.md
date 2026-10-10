@@ -27,11 +27,11 @@
 | CT-004 | Cupom | Passou | Mensagem "Cupom expirado.", nenhum desconto aplicado, frete de R$ 19,90 e total de R$ 119,90 | [Ver evidência](../evidencias/manual/CT-004/02-cupom-expirado-aplicado.png) | - |
 | CT-005 | Cupom | Passou | Com o cupom BEMVINDO10 ativo, a interface não disponibilizou campo para informar outro cupom e manteve o desconto de R$ 10,00 | [Ver evidência](../evidencias/manual/CT-005/01-cupom-aplicado.png) | - |
 | CT-006 | Cupom | Passou | Após a remoção do BEMVINDO10, o campo de cupom foi disponibilizado novamente. O código VERAO2026 foi validado como expirado, sem desconto, com frete de R$ 19,90 e total de R$ 119,90 | [Cupom removido](../evidencias/manual/CT-006/02-cupom-removido.png) / [Novo cupom validado](../evidencias/manual/CT-006/03-novo-cupom-aplicado.png) | - |
-| CT-007 | Frete | Falhou | Com subtotal de R$ 200,00, o sistema cobrou frete de R$ 19,90 e apresentou total de R$ 219,90, embora informasse que faltavam R$ 0,00 para o frete grátis | [Ver evidência](../evidencias/manual/CT-007/01-frete-cobrado-no-limite.png) | [BUG-CT-007](bugs/BUG-CT-007.md) |
-| CT-008 | Frete | Passou | Para o subtotal de R$ 229,90, o sistema concedeu frete grátis e apresentou total de R$ 229,90 | [Ver evidência](../evidencias/manual/CT-008/01-frete-gratis.png) | - |
+| CT-007 | Frete | Falhou | Com subtotal de R$ 200,00, o sistema cobrou frete de R$ 19,90, exibiu a mensagem "Faltam R$ 0,00 para o frete grátis" e apresentou total de R$ 219,90 | [Ver evidência](../evidencias/manual/CT-007/01-frete-cobrado-no-limite.png) | [BUG-CT-007](bugs/BUG-CT-007.md) |
+| CT-008 | Frete | Passou | Para o subtotal de R$ 229,90, o sistema concedeu frete grátis, não exibiu valor faltante e apresentou total de R$ 229,90 | [Ver evidência](../evidencias/manual/CT-008/01-frete-gratis.png) | - |
 | CT-009 | Frete | Passou | Para o subtotal de R$ 189,90, o sistema cobrou frete de R$ 19,90, informou que faltavam R$ 10,10 para o frete grátis e apresentou total de R$ 209,80 | [Ver evidência](../evidencias/manual/CT-009/01-cobranca-de-frete.png) | - |
-| CT-010 | Frete | Não executado | - | - | - |
-| CT-011 | Frete | Não executado | - | - | - |
+| CT-010 | Frete | Passou | Com subtotal de R$ 219,80, o cupom aplicou desconto de R$ 21,98 e reduziu o total para R$ 197,82, mantendo o frete grátis | [Ver evidência](../evidencias/manual/CT-010/02-frete-gratis-apos-desconto.png) | - |
+| CT-011 | Frete | Passou | Para o subtotal de R$ 100,00, o cupom aplicou desconto de R$ 10,00 somente sobre os produtos, manteve o frete em R$ 19,90 e apresentou total de R$ 109,90 | [Ver evidência](../evidencias/manual/CT-011/02-desconto-nao-aplicado-ao-frete.png) | - |
 | CT-012 | Carrinho | Não executado | - | - | - |
 | CT-013 | Carrinho | Não executado | - | - | - |
 | CT-014 | Carrinho | Não executado | - | - | - |
@@ -52,10 +52,10 @@
 | Situação | Quantidade |
 |---|---:|
 | Total planejado | 25 |
-| Passou | 6 |
+| Passou | 10 |
 | Falhou | 1 |
 | Bloqueado | 0 |
-| Não executado | 18 |
+| Não executado | 14 |
 
 ## Observações gerais
 

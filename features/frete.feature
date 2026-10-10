@@ -12,7 +12,7 @@ Funcionalidade: Cálculo do frete
     E o subtotal do carrinho é R$ 200,00
     Quando visualizo o resumo do carrinho
     Então o frete deve ser grátis
-    E o valor faltante para frete grátis deve ser R$ 0,00
+    E não deve ser exibida mensagem indicando valor faltante para o frete grátis
     E o total deve ser de R$ 200,00
 
   @CT-008 @CA06 @positivo
@@ -21,7 +21,7 @@ Funcionalidade: Cálculo do frete
     E o subtotal do carrinho é R$ 229,90
     Quando visualizo o resumo do carrinho
     Então o frete deve ser grátis
-    E o valor faltante para frete grátis deve ser R$ 0,00
+    E não deve ser exibida mensagem indicando valor faltante para o frete grátis
     E o total deve ser de R$ 229,90
 
   @CT-009 @CA07 @limite
@@ -35,12 +35,14 @@ Funcionalidade: Cálculo do frete
 
   @CT-010 @CA08 @regra-de-negocio
   Cenário: Manter frete grátis quando o desconto reduz o total abaixo de R$ 200,00
-    Dado que possuo 2 unidades da "Mochila Urbana 20L" no carrinho
-    E o subtotal do carrinho é R$ 200,00
+    Dado que possuo 1 unidade do "Tênis Casual Urbano" no carrinho
+    E possuo 1 unidade do "Kit 3 Pares de Meias" no carrinho
+    E o subtotal do carrinho é R$ 219,80
     Quando aplico o cupom "BEMVINDO10"
-    Então o desconto deve ser de R$ 20,00
+    Então o desconto deve ser de R$ 21,98
     E o frete deve permanecer grátis
-    E o total deve ser de R$ 180,00
+    E não deve ser exibida mensagem indicando valor faltante para o frete grátis
+    E o total deve ser de R$ 197,82
 
   @CT-011 @CA09 @regra-de-negocio
   Cenário: Não aplicar o desconto do cupom sobre o frete
