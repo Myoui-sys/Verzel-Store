@@ -27,8 +27,7 @@
 | CT-004 | Cupom | Passou | Mensagem "Cupom expirado.", nenhum desconto aplicado, frete de R$ 19,90 e total de R$ 119,90 | [Ver evidência](../evidencias/manual/CT-004/02-cupom-expirado-aplicado.png) | - |
 | CT-005 | Cupom | Passou | Com o cupom BEMVINDO10 ativo, a interface não disponibilizou campo para informar outro cupom e manteve o desconto de R$ 10,00 | [Ver evidência](../evidencias/manual/CT-005/01-cupom-aplicado.png) | - |
 | CT-006 | Cupom | Passou | Após a remoção do BEMVINDO10, o campo de cupom foi disponibilizado novamente. O código VERAO2026 foi validado como expirado, sem desconto, com frete de R$ 19,90 e total de R$ 119,90 | [Cupom removido](../evidencias/manual/CT-006/02-cupom-removido.png) / [Novo cupom validado](../evidencias/manual/CT-006/03-novo-cupom-aplicado.png) | - |
-| CT-006 | Cupom | Não executado | Passou | - | - |
-| CT-007 | Frete | Não executado | - | - | - |
+| CT-007 | Frete | Falhou | Com subtotal de R$ 200,00, o sistema cobrou frete de R$ 19,90 e apresentou total de R$ 219,90, embora informasse que faltavam R$ 0,00 para o frete grátis | [Ver evidência](../evidencias/manual/CT-007/01-frete-cobrado-no-limite.png) | [BUG-CT-007](bugs/BUG-CT-007.md) |
 | CT-008 | Frete | Não executado | - | - | - |
 | CT-009 | Frete | Não executado | - | - | - |
 | CT-010 | Frete | Não executado | - | - | - |
@@ -54,9 +53,9 @@
 |---|---:|
 | Total planejado | 25 |
 | Passou | 6 |
-| Falhou | 0 |
+| Falhou | 1 |
 | Bloqueado | 0 |
-| Não executado | 19 |
+| Não executado | 18 |
 
 ## Observações gerais
 
