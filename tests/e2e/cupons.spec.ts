@@ -54,4 +54,46 @@ test.describe("Cupons de desconto", () => {
       "R$ 215,73",
     );
   });
+  
+  test("@CT-003 rejeita cupom inexistente", async ({ page }) => {
+    const mochila = page.getByRole("article", {
+      name: "Mochila Urbana 20L",
+    });
+
+    await mochila
+      .getByRole("button", { name: "Adicionar ao carrinho" })
+      .click();
+
+    await page.getByRole("link", { name: /Carrinho/ }).click();
+
+    await expect(page).toHaveURL(/\/carrinho$/);
+
+    await page
+      .getByRole("textbox", { name: "Cupom de desconto" })
+      .fill("CUPOMINVALIDO");
+
+    await page.getByRole("button", { name: "Aplicar cupom" }).click();
+
+    await expect(
+      page.getByText("Cupom inválido.", { exact: true }),
+    ).toBeVisible();
+
+    const resumo = page.getByRole("region", {
+      name: "Resumo do pedido",
+    });
+
+    await expect(resumo.locator('[data-valor="subtotal"]')).toHaveText(
+      "R$ 100,00",
+    );
+
+    await expect(resumo.locator('[data-valor="desconto"]')).toHaveText(
+      "R$ 0,00",
+    );
+
+    await expect(resumo.locator('[data-valor="frete"]')).toHaveText("R$ 19,90");
+
+    await expect(resumo.locator('[data-valor="total"]')).toHaveText(
+      "R$ 119,90",
+    );
+  });
 });
