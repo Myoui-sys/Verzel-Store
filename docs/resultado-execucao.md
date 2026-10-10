@@ -35,10 +35,10 @@
 | CT-012 | Carrinho | Passou | O sistema permitiu 5 unidades do produto, apresentou subtotal de R$ 149,50, frete de R$ 19,90 e total de R$ 169,40 | [Ver evidência](../evidencias/manual/CT-012/02-limite-atendido.png) | - |
 | CT-013 | Carrinho | Passou | Ao atingir 5 unidades, o sistema desabilitou a adição de novas unidades, exibiu a mensagem "Limite de 5 unidades por produto." e manteve o subtotal em R$ 149,50 | [Ver evidência](../evidencias/manual/CT-013/01-limite-cinco-unidades.png) | - |
 | CT-014 | Carrinho | Passou | O sistema apresentou subtotal de R$ 179,70, desconto de R$ 17,97, frete de R$ 19,90, total de R$ 181,63 e todos os valores monetários com duas casas decimais | [Ver evidência](../evidencias/manual/CT-014/02-cupom-aplicado-decimal.png) | - |
-| CT-015 | API | Não executado | - | - | - |
-| CT-016 | API | Não executado | - | - | - |
-| CT-017 | API | Não executado | - | - | - |
-| CT-018 | API | Não executado | - | - | - |
+| CT-015 | API | Passou | A API respondeu com status 200 e retornou uma lista de produtos contendo os campos id, nome, descrição, categoria e preço | [Ver evidência](../evidencias/api/CT-015/01-listagem-produtos-status-200.png) | - |
+| CT-016 | API | Passou | A API respondeu com status 200, subtotal de 239.70, desconto de 23.97, frete zero, total de 215.73 e cupom BEMVINDO10 marcado como aplicado | [Ver evidência](../evidencias/api/CT-016/01-calculo-cupom-valido.png) | - |
+| CT-017 | API | Passou | A API respondeu com status 200, manteve o desconto em zero e retornou o cupom CUPOMINVALIDO como não aplicado, com a mensagem "Cupom inválido." | [Ver evidência](../evidencias/api/CT-017/01-calculo-cupom-invalido.png) | - |
+| CT-018 | API | Falhou | A API aceitou 6 unidades do produto, respondeu com status 200 e calculou o carrinho, em vez de retornar status 422 e o código QUANTIDADE_MAXIMA_EXCEDIDA | [Ver evidência](../evidencias/api/CT-018/01-api-aceita-quantidade-acima-limite.png) | [BUG-CT-018](bugs/BUG-CT-018.md) |
 | CT-019 | API | Não executado | - | - | - |
 | CT-020 | API | Não executado | - | - | - |
 | CT-021 | Checkout | Passou | O pedido foi confirmado com dados válidos, apresentou número no formato VZ-000000 e não solicitou pagamento online | [Ver evidência](../evidencias/manual/CT-021/02-pedido-confirmado.png) | - |
@@ -52,10 +52,10 @@
 | Situação | Quantidade |
 |---|---:|
 | Total planejado | 25 |
-| Passou | 18 |
+| Passou | 21 |
 | Falhou | 1 |
 | Bloqueado | 0 |
-| Não executado | 6 |
+| Não executado | 3 |
 
 ## Observações gerais
 
