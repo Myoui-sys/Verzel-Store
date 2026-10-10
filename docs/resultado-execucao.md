@@ -41,21 +41,21 @@
 | CT-018 | API | Não executado | - | - | - |
 | CT-019 | API | Não executado | - | - | - |
 | CT-020 | API | Não executado | - | - | - |
-| CT-021 | Checkout | Não executado | - | - | - |
-| CT-022 | Checkout | Não executado | - | - | - |
-| CT-023 | Checkout | Não executado | - | - | - |
-| CT-024 | Checkout | Não executado | - | - | - |
-| CT-025 | Checkout | Não executado | - | - | - |
+| CT-021 | Checkout | Passou | O pedido foi confirmado com dados válidos, apresentou número no formato VZ-000000 e não solicitou pagamento online | [Ver evidência](../evidencias/manual/CT-021/02-pedido-confirmado.png) | - |
+| CT-022 | Checkout | Passou | O sistema aceitou o CEP 01310100 sem hífen e confirmou o pedido normalmente | [Ver evidência](../evidencias/manual/CT-022/02-pedido-confirmado.png) | - |
+| CT-023 | Checkout | Passou | O sistema impediu a confirmação do pedido com o nome "Maria", permaneceu no checkout e indicou que o campo de nome era inválido | [Ver evidência](../evidencias/manual/CT-023/01-nome-sem-sobrenome-rejeitado.png) | - |
+| CT-024 | Checkout | Passou | O sistema impediu a confirmação do pedido com o e-mail "maria@", permaneceu no checkout e indicou que o campo de e-mail era inválido | [Ver evidência](../evidencias/manual/CT-024/01-email-invalido-rejeitado.png) | - |
+| CT-025 | Checkout | Passou | O sistema impediu a confirmação do pedido com o CEP "01310-10", permaneceu no checkout e indicou que o campo de CEP era inválido | [Ver evidência](../evidencias/manual/CT-025/01-cep-invalido-rejeitado.png) | - |
 
 ## Resumo
 
 | Situação | Quantidade |
 |---|---:|
 | Total planejado | 25 |
-| Passou | 13 |
+| Passou | 18 |
 | Falhou | 1 |
 | Bloqueado | 0 |
-| Não executado | 11 |
+| Não executado | 6 |
 
 ## Observações gerais
 
